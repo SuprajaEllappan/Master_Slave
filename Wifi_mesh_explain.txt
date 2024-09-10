@@ -1,0 +1,27 @@
+
+File Name:
+
+            WiFi Mesh(Master&slaveConcepts)
+
+Abstract:
+            
+            Here I used master slave concepts.Instead of painlessMesh.h library , here we used esp_now.h library .Master send data to 2 slave.
+            If we using esp_now.h library , we need to know the mac address of the esp32.
+
+Components: 
+
+            1.3-ESP-32
+            2.PIR sensor
+            
+Explanation:
+
+           In this project it is a one way communication . The PIR sensor sense the moving object and return a output to the master esp32.the master 
+           receive the output from PIR sensor it send a value 1 to the two slave ESP32 if the PIR doesn't send output,the Master send a value 0.In 
+           slave if the received value is 1 the Inbuilt led turn ON .If the received value is 1 the Inbuilt led turn OFF.
+ 
+
+Verified By:
+
+          1. Praveen
+          2. Ananthu
+                
